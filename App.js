@@ -6,7 +6,6 @@ import Saludar from "./src/components/Saludar";
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <Saludar firstname="Oscar" lastname="Martinez" /> */}
       <Saludar />
       <LoginForm />
       <StatusBar style="auto" />
