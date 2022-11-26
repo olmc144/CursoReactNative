@@ -30,5 +30,9 @@
   "devDependencies": {
     "@babel/core": "^7.12.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olmc144/CursoReactNative.git"
+  },
   "private": true
 }
