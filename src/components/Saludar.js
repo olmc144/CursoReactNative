@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export default function Saludar(props) {
-  const { firstname = "Usuario", lastname = "Incognito" } = props;
+  const { firstname, lastname } = props;
   console.log(firstname + " " + lastname);
   return (
     <Text>
@@ -11,6 +11,11 @@ export default function Saludar(props) {
     </Text>
   );
 }
+
+Saludar.defaultProps = {
+  firstname: "Usuario",
+  lastname: "Incognito",
+};
 
 Saludar.propTypes = {
   firstname: PropTypes.string.isRequired,
