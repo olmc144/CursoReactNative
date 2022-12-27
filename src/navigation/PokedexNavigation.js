@@ -16,10 +16,14 @@ export default function PokedexNavigation() {
           headerTitleStyle: {
             alignSelf: "center",
           },
-          headerTransparent: true,
+          // headerTransparent: true,
         }}
       />
-      <Stack.Screen name="Pokemon" component={PokemonScreen} />
+      <Stack.Screen
+        name="Pokemon"
+        component={PokemonScreen}
+        options={{ title: "", headerTransparent: true }}
+      />
     </Stack.Navigator>
   );
 }
